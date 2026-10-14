@@ -1,0 +1,19 @@
+
+# Automatically detect text files
+* text=auto
+
+# Python source code
+*.py text eol=lf
+
+# Common configuration and documentation
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

@@ -1,0 +1,37 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw datasets and captured data
+data/
+datasets/
+
+# Large point-cloud files
+*.ply
+*.pcd
+*.bag
+
+# Temporary experiment outputs
+results/
+outputs/
+logs/
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
