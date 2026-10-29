@@ -4,7 +4,7 @@ from collections import defaultdict
 
 import numpy as np
 
-import plane_detection_common as common
+import plane_detection_common_real as common
 
 
 # ==========================================================
