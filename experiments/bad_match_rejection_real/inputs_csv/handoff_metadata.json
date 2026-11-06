@@ -1,0 +1,34 @@
+{
+  "data_origin": "Run I D435i, Frames 000000-000004; Attempt E saved Assignment outputs",
+  "source_assignment_algorithm": "jonker_volgenant",
+  "solver_note": "The four solvers returned identical match sets on this dataset; JV chosen solely as a nonduplicated BMR handoff",
+  "assignment_was_rerun": false,
+  "cases": 64,
+  "cases_with_matches": 48,
+  "zero_match_cases": 16,
+  "cases_with_at_least_3_matches": 48,
+  "assigned_pair_records": 282,
+  "distinct_frame_plane_pairs": 38,
+  "assigned_gt_same_surface": 280,
+  "assigned_gt_different_surface": 2,
+  "unmatched_plane_rows": 440,
+  "plane_feature_rows": 48,
+  "gt_attached_to_algorithm_inputs": false,
+  "input_geometry_frame": "The paired source/target normals and offsets from Attempt D are already expressed in target coordinates; original-frame plane_features are separate",
+  "limitations": [
+    "The 282 assigned-pair records contain repeated physical pair IDs across gating/similarity cases (38 unique frame/plane pairs).",
+    "Only two negative assigned pairs, both in normal-based gating + Pop-up Weighted; not enough negative examples for a robust rejection benchmark.",
+    "Candidate graph omits zero-edge planes; unmatched_plane rows cannot recover these.",
+    "Only CSV plane geometry / precomputed residuals are present. Full 3D support points and verified relative-pose matrices are not provided; original TUM-oriented NPZ bad-match code cannot directly consume this CSV package.",
+    "Source and target centroids in bmr_plane_features_original_frames.csv are in their own frame coordinates; do NOT compare them directly without relative-pose transformation.",
+    "Manual Surface IDs have no explicit annotation_status field. GT labels reflect the user-reviewed Surface IDs."
+  ],
+  "sources": [
+    "assignment_matches(1).csv",
+    "assignment_unmatched(1).csv",
+    "case_manifest.csv",
+    "similarity_results_all(2).csv",
+    "GT_Manual(5).xlsx",
+    "Attempt_F_GT_Match_Audit.csv"
+  ]
+}
